@@ -31,8 +31,10 @@ Permitir al equipo creativo generar paletas de colores aleatorias para acelerar 
 ## Estructura del proyecto
 
 ```text
-colorfly-palette-generator/
+ENTREGA1/
 ├── index.html
 ├── styles.css
 ├── script.js
+├── colorfly-favicon.png
+├── LICENSE
 └── README.md

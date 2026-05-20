@@ -9,6 +9,7 @@
     
 </head>
 <body>
+  <!-- header -->
      <header class="app-header">
     <div>
       <p class="eyebrow">Colorfly Studio</p>
@@ -20,9 +21,10 @@
   </header>
 
   <main class="app-main">
+    <!-- controles de la app -->
     <section class="controls-section" aria-labelledby="controls-title">
       <h2 id="controls-title">Configuración de la paleta</h2>
-
+      <!-- lista para seleccionar cantidad de colores -->
       <form class="controls" id="paletteForm">
         <div class="field-group">
           <label for="paletteSize">Tamaño de la paleta</label>
@@ -32,27 +34,27 @@
             <option value="9">9 colores</option>
           </select>
         </div>
-
+        <!-- boton submit -->
         <button type="submit" class="primary-button">
           Generar paleta
         </button>
-
+        <!-- guardar paleta -->
         <button type="button" class="secondary-button" id="savePaletteButton">
           Guardar paleta
         </button>
       </form>
     </section>
-
+    <!-- seccion dinamica de paletas -->
     <section class="palette-section" aria-labelledby="palette-title">
       <h2 id="palette-title">Paleta generada</h2>
-
+      <!-- IMPORTANTE este div auque este vacio es al que se le inyectan las paletas, NO INCLUIR TEXTO NI NINGUN ELEMENTO HIJO -->
       <div 
         class="palette-grid" 
         id="paletteGrid" 
         aria-live="polite"
       ></div>
     </section>
-
+    
     <section class="saved-section" aria-labelledby="saved-title">
       <h2 id="saved-title">Última paleta guardada</h2>
       <div class="saved-palette" id="savedPalette">
@@ -60,11 +62,12 @@
       </div>
     </section>
   </main>
-
+    <!-- toast dinamico, se invoca al generar la accion -->
   <div class="toast" id="toast" role="status" aria-live="polite">
     Color copiado
   </div>
-
+<!-- IMPORTANTE, si se modifica la ubiciacion del archivo js hay que modificar este enlace -->
   <script src="script.js"></script>
+
 </body>
 </html>
